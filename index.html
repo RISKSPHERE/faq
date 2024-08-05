@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Location Rating Improvement Guide</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        margin-top: 2rem;
+        margin-inline: 2rem;
+        font-family: "DM Sans", sans-serif;
+      }
+
+      .accordion {
+        margin-top: 2rem;
+      }
+
+      .accordion__content {
+        display: none;
+        padding-top: 1rem;
+      }
+      .accordion section {
+        margin-top: 1rem;
+        background-color: #efefef;
+        padding: 1rem;
+        border: 1px solid #d8d8d8;
+        border-radius: 8px;
+      }
+
+      .accordion__title {
+        cursor: pointer;
+        position: relative;
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+
+      .accordion__mainTitle {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 2rem;
+      }
+
+      .accordion__content img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 1rem;
+      }
+
+      .accordion__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .accordion__icon {
+        font-size: 1.8rem;
+        cursor: pointer;
+      }
+
+      .accordion__content p {
+        font-size: 1rem;
+        color: #3e3e3e;
+      }
+
+      main {
+        margin: 2rem 0;
+        background-color: #efefef;
+        padding: 1rem;
+        border-radius: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Location Rating Improvement Guide</h1>
+    </header>
+    <main>
+      <!-- Accordion rating 5 -->
+      <div class="accordion">
+        <h2 class="accordion__mainTitle">Rating 5</h2>
+        <section>
+          <div class="accordion__header">
+            <h3 class="accordion__title">
+              Q. How can I update the name of the building?
+            </h3>
+
+            <div class="accordion__icon">+</div>
+          </div>
+          <div class="accordion__content">
+            <div>
+              <p>
+                A1. You can click on the “Edit Building Name” Button and provide
+                the updated building name. In this case Geo-coding will not be
+                executed again.
+              </p>
+
+              <figure>
+                <img
+                  src="./assets/edit-building-name.png"
+                  alt="edit building name"
+                />
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="accordion__header">
+            <h3 class="accordion__title">
+              Q. How can I add more building or sub destinations in the vicinity
+              of the Location or Address?
+            </h3>
+
+            <div class="accordion__icon">+</div>
+          </div>
+
+          <div class="accordion__content">
+            <div>
+              <p>
+                A1. The Location has a rating of 5 as the Location pin is found
+                on the rooftop. However, it seems that there are more buildings
+                associated with that location in the vicinity. To include these
+                locations in the Location List (also referred as SOV), you can
+                click on the “Add sub destination" Button situated at the top
+                right corner of the Map.
+              </p>
+
+              <figure>
+                <img
+                  src="./assets/sub-destinations.png"
+                  alt="add sub destination"
+                />
+              </figure>
+
+              <p style="margin-top: 1rem">
+                It will show all additional Building with blue markers and
+                original building with the red marker. You can right click on
+                these Blue Pin Markers or click from the list below the map and
+                click on “Add to SOV” to add the location in the location list
+                or SOV.
+              </p>
+
+              <figure>
+                <img src="./assets/add-to-sov.png" alt="add to sov" />
+              </figure>
+
+              <figure>
+                <img
+                  src="./assets/sub-dest-location-list.png"
+                  alt="sub destination to list"
+                />
+              </figure>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Accordion rating 4 -->
+      <div class="accordion">
+        <h2 class="accordion__mainTitle">Rating 4</h2>
+        <section>
+          <div class="accordion__header">
+            <h3 class="accordion__title">
+              Q. How can I improve the score of the location?
+            </h3>
+
+            <div class="accordion__icon">+</div>
+          </div>
+          <div class="accordion__content">
+            <div>
+              <p>
+                A1. You can click on “Edit Location”, to update the Building
+                Name. In this case the application will rerun the geo-coding
+                with the updated building name and re-calculate the Rating of
+                the location.
+              </p>
+
+              <figure>
+                <img src="./assets/edit-location.png" alt="edit location" />
+              </figure>
+
+              <p>
+                A2. You can search your building from the search box and select
+                your property; after selecting the property from the list, you
+                can confirm your building. After the confirmation, the score
+                will be updated to 5. and in case of not confirming, you can
+                retry for improvement of score.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="accordion__header">
+            <h3 class="accordion__title">
+              Q. How can I update the name of the building?
+            </h3>
+
+            <div class="accordion__icon">+</div>
+          </div>
+
+          <div class="accordion__content">
+            <div>
+              <p>
+                A. You can click on the “Edit Building Name” Button and provide
+                the updated building name. In this case Geo-coding will not be
+                executed again.
+              </p>
+
+              <figure>
+                <img
+                  src="./assets/edit-building-name.png"
+                  alt="edit building name"
+                />
+              </figure>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Accordion rating 3 -->
+      <div class="accordion">
+        <h2 class="accordion__mainTitle">Rating 3</h2>
+        <section>
+          <div class="accordion__header">
+            <h3 class="accordion__title">
+              Q. How can I improve the score of the location?
+            </h3>
+
+            <div class="accordion__icon">+</div>
+          </div>
+          <div class="accordion__content">
+            <div>
+              <p>
+                A1. You can click on “Edit Location”, to update the Building
+                Name. In this case the application will rerun the geo-coding
+                with the updated building name and re-calculate the Rating of
+                the location. building name and re-calculate the Rating of the
+                location.
+              </p>
+
+              <figure>
+                <img src="./assets/edit-location.png" alt="edit location" />
+              </figure>
+
+              <p>
+                A2. You can search your building from the search box and select
+                your property; after selecting the property from the list, you
+                can confirm your building. After the confirmation, the score
+                will be updated to 5. and in case of not confirming, you can
+                retry for improvement of score.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="accordion__header">
+            <h3 class="accordion__title">
+              Q. How can I update the name of the building?
+            </h3>
+
+            <div class="accordion__icon">+</div>
+          </div>
+
+          <div class="accordion__content">
+            <div>
+              <p>
+                A. You can click on the “Edit Building Name” Button and provide
+                the updated building name. In this case Geo-coding will not be
+                executed again.
+              </p>
+
+              <figure>
+                <img
+                  src="./assets/edit-building-name.png"
+                  alt="edit building name"
+                />
+              </figure>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Accordion rating 2 -->
+      <div class="accordion">
+        <h2 class="accordion__mainTitle">Rating 2</h2>
+        <section>
+          <div class="accordion__header">
+            <h3 class="accordion__title">
+              Q. How can I improve the score of the location?
+            </h3>
+
+            <div class="accordion__icon">+</div>
+          </div>
+          <div class="accordion__content">
+            <div>
+              <p>
+                A1. You can click on “Edit Location”, to update the Building
+                Name. In this case the application will rerun the geo-coding
+                with the updated building name and re-calculate the Rating of
+                the location.
+              </p>
+
+              <figure>
+                <img src="./assets/edit-location.png" alt="edit location" />
+              </figure>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Accordion rating 1 -->
+      <div class="accordion">
+        <h2 class="accordion__mainTitle">Rating 1</h2>
+        <section>
+          <div class="accordion__header">
+            <h3 class="accordion__title">
+              Q. How can I improve the score of the location?
+            </h3>
+
+            <div class="accordion__icon">+</div>
+          </div>
+          <div class="accordion__content">
+            <div>
+              <p>
+                A1. You can click on “Edit Location”, to update the Building
+                Name. In this case the application will rerun the geo-coding
+                with the updated building name and re-calculate the Rating of
+                the location.
+              </p>
+
+              <figure>
+                <img src="./assets/edit-location.png" alt="edit location" />
+              </figure>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      const accordionTitles = document.querySelectorAll(".accordion__header");
+
+      accordionTitles.forEach((accordionTitle) => {
+        accordionTitle.addEventListener("click", () => {
+          const accordionContent = accordionTitle.nextElementSibling;
+          // chage + to - and vice versa
+          const icon = accordionTitle.querySelector(".accordion__icon");
+
+          if (accordionContent.style.display === "block") {
+            accordionContent.style.display = "none";
+            icon.textContent = "+";
+          } else {
+            icon.textContent = "-";
+            accordionContent.style.display = "block";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
